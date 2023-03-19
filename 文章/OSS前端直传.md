@@ -3,7 +3,7 @@
 ## 一、服务端签名后前端直传
    首先安装阿里云SDK Aliyun.OSS.SDK.NetCore
 
-```C# 
+```cs
         public static string accessKeyId = "你的accessKeyId";
         public static string accessKeySecret = "你的accessKeySecret";
         public static string bucketName = "你的桶名称";
@@ -47,7 +47,7 @@
         }
 ```
 前端首先访问后端获取签名,获取签名后使用FromData的形式上传文件
-```vue
+```js
 async startUpload() {
       // 获取后端签名和上传地址
       const res = await axios.get("http://localhost:5152/api/OSS/GetPolicy", {
@@ -85,7 +85,7 @@ async startUpload() {
 
 安装 aliyun-net-sdk-core和aliyun-net-sdk-sts sdk
 
-```c#
+```cs
 public Dictionary<string, string> GetSTSToken()
         {
             //此处使用sts账户的id和secret
@@ -118,7 +118,7 @@ public Dictionary<string, string> GetSTSToken()
 npm install ali-oss;
 npm install SparkMD5;
 ```
-```vue 
+```js 
 <template>
   <div class="hello">
     <div>
