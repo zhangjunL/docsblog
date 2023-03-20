@@ -11,7 +11,6 @@
         public static int expireTime = 30;
         public Dictionary<string, string> GetPolicy(string fileName)
         {
-
             var dir = DateTime.Now.ToString("yyyyMMdd") + "/";
             // 构造OssClient实例。 endpoint 格式:https://oss-cn-beijing.aliyuncs.com
             var ossClient = new OssClient("https://" + endpoint, accessKeyId, accessKeySecret);
@@ -227,4 +226,5 @@ async uploadFile(file) {
       });
     }
 ```
+
 如果想自己控制上传的各步骤可以使用initiateMultipartUpload  uploadPart completeMultipartUpload 等方法自行实现各步骤，大致思路就是先initiateMultipartUpload初始化一个分片上传，返回uploadid，然后将文件按一定的大小分片，之后循环上传每个分片，完成分片之后调用completeMultipartUpload方法合并文件,这种方式比较复杂。
