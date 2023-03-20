@@ -115,7 +115,7 @@ public Dictionary<string, string> GetSTSToken()
 签名完成后，安装阿里云oss sdk
 ```shell
 npm install ali-oss;
-npm install SparkMD5;
+npm install spark-md5;
 ```
 ```js 
 <template>
