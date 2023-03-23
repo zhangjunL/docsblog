@@ -1,3 +1,4 @@
+## 安装
 ### 1.安装Docker
 ```bash
 sudo apt update
@@ -32,37 +33,67 @@ sudo apt install docker-ce
   sudo systemctl status docker
 ```
 
+## Docker 常用命令
 
-### 一、手动部署 
- 前端：
-1.本地构建  npm run build
+### 0.查看docker版本
+```bash
+docker version
+```
+### 1.下载镜像
+```bash
+docker pull 镜像名称
+```
 
-1.复制docker 文件夹到 dist发布的文件夹（包含nginx配置文件，如需修改，应在生成镜像前进行修改）
+  你可以使用公共镜像或者构建自己的镜像
 
-2.复制 Dockerfile 文件到 发布文件夹根目录（该文件中可以指定nginx镜像版本）
-
-3.将发布文件夹上传到服务器（可以使用xftp工具或者scp命令）
-
-4.通过ssh 连接到linux服务器
-
-5.进入发布文件夹中
-
-6.运行 docker build -t name:tag .   (.不能省略) 生成镜像
-
-7.docker run -restart=away -d -p 宿主机端口:docker端口 --name 容器名称  镜像名称：tag(tag应递增)
-
-后端:
-1.在visual studio 2022及以上版本中发布，发布在文件夹中。
-
-2.将发布好的文件上传到服务器
-
-3.通过ssh连接到linux服务器
-
-4.进入发布文件夹中
-
-5.运行 docker build -t name:tag .   (.不能省略) 生成镜像
-
-6.docker run -restart=away -d -p 宿主机端口:docker端口 --name 容器名称  镜像名称：tag(tag应递增)
+### 2.构建镜像
+```bash
+docker build -t 镜像名称:tag .  (.不能省略)
+```
 
 
+### 3.运行镜像
+```bash
+docker run -d -p 宿主机端口:docker端口 --name 容器名称  镜像名称：tag(tag应递增)
+```
 
+### 4.查看镜像
+```bash
+docker images
+```
+### 5.查看容器
+```bash
+docker ps -a
+```
+### 6.删除镜像
+```bash
+docker rmi 镜像id
+```
+### 7.删除容器
+```bash
+docker rm 容器id
+```
+### 8.启动容器
+```bash
+docker start 容器id
+```
+### 9.停止容器
+```bash
+docker stop 容器id
+```
+### 10.进入容器
+```bash
+docker exec -it 容器id /bin/bash
+```
+### 11.退出容器
+```bash
+exit
+```
+### 12.查看容器日志
+```bash
+docker logs 容器id
+```
+### 13.查看容器内进程
+```bash
+docker top 容器id
+```
