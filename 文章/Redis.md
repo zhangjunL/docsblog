@@ -28,7 +28,7 @@
 
 
 ### 1. docker方式安装
-docker安装及使用教程：[Docker使用指南](/文章/Docker使用指南.md)
+docker安装及使用教程：[Docker使用指南](/文章/Docker使用指南)
 
 ```bash
        docker pull redis
