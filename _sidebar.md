@@ -5,7 +5,7 @@
   - [Docker使用指南](/文章/Docker使用指南)
   - [Net_Core_docker部署指南](/文章/Net_Core_docker部署指南)
   - [nginx使用指南](/文章/nginx使用指南)
-  - [dotnet_Core拆分Execl文件](/文章/dotnet_Core拆分Execl文件)
+  - [dotnet_Core拆分Execl文件](/文章/dotnet_Core拆分execl文件)
 - [Python](/python/)
   - [python办公自动化(一)](/python/python办公自动化（一）对比execl内容)
 - [踩坑](/踩坑/)
