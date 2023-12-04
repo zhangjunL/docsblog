@@ -1,5 +1,5 @@
 
-  #·.Net Core拆分execl文件
+  # .Net Core拆分execl文件
   ## 简介
   ### 一、用途
     这是一个.net core写的按照指定行数拆分execl文件的例子，可以将一个execl文件按照指定行数和区域，将execl文件拆分为多个execl文件，
