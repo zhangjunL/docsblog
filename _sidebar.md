@@ -6,6 +6,7 @@
   - [Net_Core_docker部署指南](/文章/Net_Core_docker部署指南)
   - [nginx使用指南](/文章/nginx使用指南)
   - [dotnet_Core拆分Execl文件](/文章/dotnet_Core拆分execl文件)
+  - [vuex状态管理](/文章/vuex状态管理)
 
 - [dotNet_Core系列教程](/dotNet_Core系列教程/)
   - [dotNet_Core系列教程之如何获取配置](/dotNet_Core系列教程/如何获取配置)
