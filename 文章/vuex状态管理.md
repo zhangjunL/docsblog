@@ -111,6 +111,7 @@ export default {
 ```
 
 ```js
+
 //使用状态
 this.$store.state.count
 //使用getter
@@ -121,4 +122,3 @@ this.$store.commit('increment')
 this.$store.dispatch('asyncIncrement')
 
 ```
-

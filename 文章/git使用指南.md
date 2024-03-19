@@ -47,4 +47,36 @@
     git reset
 
 
+## git 常见问题
+
+### 一、连接失败
+
+```
+   git Failed to connect to 127.0.0.1 port xxxx: Connection refused
+```
+ #### 1.查看是否有代理
+ ```
+ 查看是否有代理
+ git config --global http.proxy;
+ ```
+
+ ```
+    取消代理
+    git config --global --unset http.proxy
+ ```
+
+#### 2.如需使用代理则设置代理
+```
+git config --global http.proxy socks5://127.0.0.1:1080
+``` 
+
+
+
+
+
+
+
+
+
+
 > 未完待续......
